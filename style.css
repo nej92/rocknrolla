@@ -6,7 +6,7 @@
 html{
     font-family: roboto CONDENSED;
 }
-
+/*-------------------------------SECTION 1----------------------------------*/
 header{
     position: fixed;
     display: flex;
@@ -16,6 +16,7 @@ header{
     justify-content:space-between;
     align-items: center;
     background-color: #212121;
+    z-index: 100;
 }
 
 #logo-header{
@@ -38,32 +39,52 @@ nav{
     margin-right: 1em;
 }
 
-.btn-menu-hover{
-    z-index: 100;
-}
-
 .menu-header:hover{
     background-color: #F9E721;
     transition: .7s;
 }
 
-#menu-mobile{
+/*--------MENU DESPLEGABLE MOBILE--------*/
+#cont-menudespl-mobile{
     display: none;
-    visibility: hidden;
+}
+
+/*--------BTN HAMBUR--------*/
+#cont-btn-hambur{
+    display: none;
 }
 
 #hambur-check{
     display: none;
 }
 
-#cont-btn-hambur{
-    display: none;
+#menu-mobile{
+    visibility: hidden;
 }
 
+#cross-mobile{
+    visibility: hidden;
+}
+/*-------------------------------SECTION 2----------------------------------*/
+#conteiner-sec2{
+    font-size: 3rem;
+    
+}
+
+#video-explo{
+    margin-top: 2.9em;
+    position: relative;
+    width: 100%;
+    height: 15em;
+    border: solid 2px red;
+    z-index: 90;
+    
+}
 
 /*-------------------------------RESPONSIVE----------------------------------*/
 
 @media (max-width: 375px){
+/*----------------SECTION 1----------------*/
     header{
         font-size: 2.5rem;
     }
@@ -73,15 +94,40 @@ nav{
         visibility: hidden;
     }
 
-    #menu-mobile{
-        display: block;
-        visibility: visible;
-        width: 1em;
-        padding-right: .5em;        
+/*--------BTN HAMBUR--------*/
+#cont-btn-hambur{
+    display: block;
+}
+
+#menu-mobile{
+    visibility: visible;
+    width: 1em;
+    margin-right: .7em;   
+}
+
+#cross-mobile{
+    display: none;
+    visibility: hidden;
+    width: .9em;
+    height: .9em;
+    margin-right: .7em;
+}
+
+#hambur-check:checked ~ * #menu-mobile{
+    display: none;
+    visibility: hidden;
+}
+
+#hambur-check:checked ~ * #cross-mobile{
+    display: block;
+    visibility: visible;
+}
+
+
+/*----------------SECTION 2----------------*/
+    #conteiner-sec2{
+        font-size: 1.99rem;
     }
-
-
-
 
 }
 
