@@ -26,7 +26,7 @@ header{
 
 nav{
     font-size: 1rem;
-    padding-right: 2em;
+    padding-right: 1.2em;
 }
 
 .menu-header{
@@ -34,24 +34,54 @@ nav{
     font-size: 1.3em;
     color: #ffff;
     text-decoration: none;
-    margin-left: .5em;
-    margin-right: .5em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
+.btn-menu-hover{
+    z-index: 100;
+}
 
+.menu-header:hover{
+    background-color: #F9E721;
+    transition: .7s;
+}
 
+#menu-mobile{
+    display: none;
+    visibility: hidden;
+}
 
+#hambur-check{
+    display: none;
+}
 
-
-
-
-
-
+#cont-btn-hambur{
+    display: none;
+}
 
 
 /*-------------------------------RESPONSIVE----------------------------------*/
 
 @media (max-width: 375px){
+    header{
+        font-size: 2.5rem;
+    }
+    
+    nav{
+        font-size: .6rem;
+        visibility: hidden;
+    }
+
+    #menu-mobile{
+        display: block;
+        visibility: visible;
+        width: 1em;
+        padding-right: .5em;        
+    }
+
+
+
 
 }
 
