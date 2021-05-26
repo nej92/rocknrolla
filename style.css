@@ -8,6 +8,7 @@ html{
 }
 /*-------------------------------SECTION 1----------------------------------*/
 header{
+    position: relative;
     position: fixed;
     display: flex;
     width: 100%;
@@ -25,7 +26,7 @@ header{
     padding-left: .5em;
 }
 
-nav{
+#nav-menu{
     font-size: 1rem;
     padding-right: 1.2em;
 }
@@ -82,6 +83,10 @@ nav{
 }
 
 /*-------------------------------RESPONSIVE----------------------------------*/
+/*
+@media (max-width: 1280px){
+
+}*/
 
 @media (max-width: 375px){
 /*----------------SECTION 1----------------*/
@@ -89,7 +94,7 @@ nav{
         font-size: 2.5rem;
     }
     
-    nav{
+    #nav-menu{
         font-size: .6rem;
         visibility: hidden;
     }
@@ -122,6 +127,38 @@ nav{
     display: block;
     visibility: visible;
 }
+
+/*--------MENU DESPLEGABLE MOBILE--------*/
+#cont-menudespl-mobile{
+    display: block;
+    position: absolute;
+    background-color: #212121;
+    margin-top: 7.3em;
+    width: 100%;
+    visibility: hidde;
+   /* border-top: double 5px #ffff; */
+}
+
+#nav-desp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 5em;
+}
+
+.menu-despl{
+    font-family: bebas NEUE;
+    font-size: .7em;
+    color: #ffff;
+    text-decoration: none;
+}
+
+#hambur-check:checked ~ * #cont-menudespl-mobile{
+    visibility: visible;
+    
+}
+
 
 /*----------------SECTION 2----------------*/
     #conteiner-sec2{
