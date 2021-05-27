@@ -1,12 +1,12 @@
 *{
-    padding: 0em;
-    margin: 0em;
+    padding: 0px;
+    margin: 0px;
 }
 
 html{
     font-family: roboto CONDENSED;
 }
-/*-------------------------------SECTION 1----------------------------------*/
+/*-------------------------------HEADER----------------------------------*/
 header{
     position: relative;
     position: fixed;
@@ -41,13 +41,15 @@ header{
 }
 
 .menu-header:hover{
-    background-color: #F9E721;
+    text-decoration: underline;
+    color: #F9E721;
     transition: .7s;
 }
 
 /*--------MENU DESPLEGABLE MOBILE--------*/
-#cont-menudespl-mobile{
+#nav-desp{
     display: none;
+    visibility: hidden;
 }
 
 /*--------BTN HAMBUR--------*/
@@ -66,30 +68,96 @@ header{
 #cross-mobile{
     visibility: hidden;
 }
-/*-------------------------------SECTION 2----------------------------------*/
-#conteiner-sec2{
+/*-------------------------------SECTION 1----------------------------------*/
+#conteiner-sec1{
     font-size: 3rem;
-    
+    overflow: hidden;
+    height: 19em;
+    background: url("imgs/explooo.gif");
+    background-size: cover;
+    background-position: center;
 }
 
 #video-explo{
-    margin-top: 2.9em;
-    position: relative;
+    margin-top: 2.8em;
     width: 100%;
-    height: 15em;
+    height: 100%;
     border: solid 2px red;
+    background: url("imgs/explo19.mp4");
+    background-size: cover;
+    background-position: center;
     z-index: 90;
     
 }
 
+/*-------------------------------RESPONSIVE----------------------------------*/
+/*-------------------------------RESPONSIVE----------------------------------*/
+/*-------------------------------RESPONSIVE----------------------------------*/
 /*-------------------------------RESPONSIVE----------------------------------*/
 /*
 @media (max-width: 1280px){
 
 }*/
 
+@media (min-aspect-ratio: 16/9){
+    #video-explo{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    #video-explo{
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    #video-explo{
+        display: none;
+    }
+}
+
+@media (max-width: 621px){
+    /*--------BTN HAMBUR--------*/
+    #cont-btn-hambur{
+        display: block;
+    }
+
+    #menu-mobile{
+        visibility: visible;
+        width: 1em;
+        margin-right: .7em;   
+    }
+
+    #cross-mobile{
+        display: none;
+        visibility: hidden;
+        width: .9em;
+        height: .9em;
+        margin-right: .7em;
+    }
+
+    #hambur-check:checked ~ * #menu-mobile{
+        display: none;
+        visibility: hidden;
+    }
+
+    #hambur-check:checked ~ * #cross-mobile{
+        display: block;
+        visibility: visible;
+    }
+
+    #nav-menu{
+        font-size: .6rem;
+        visibility: hidden;
+    }
+
+}
+
 @media (max-width: 375px){
-/*----------------SECTION 1----------------*/
+/*----------------HAMBUR----------------*/
     header{
         font-size: 2.5rem;
     }
@@ -98,6 +166,11 @@ header{
         font-size: .6rem;
         visibility: hidden;
     }
+
+/*-------------------------------SECTION 1----------------------------------*/
+#conteiner-sec1{
+    font-size: 2rem;
+}
 
 /*--------BTN HAMBUR--------*/
 #cont-btn-hambur{
@@ -129,18 +202,21 @@ header{
 }
 
 /*--------MENU DESPLEGABLE MOBILE--------*/
-#cont-menudespl-mobile{
+/*#cont-menudespl-mobile{
     display: block;
     position: absolute;
     background-color: #212121;
     margin-top: 7.3em;
     width: 100%;
-    visibility: hidde;
-   /* border-top: double 5px #ffff; */
+    border-top: double 5px #ffff; */
 }
 
 #nav-desp{
     display: flex;
+    position: absolute;
+    background-color: #212121;
+    margin-top: 7.3em;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
@@ -154,18 +230,12 @@ header{
     text-decoration: none;
 }
 
-#hambur-check:checked ~ * #cont-menudespl-mobile{
+#hambur-check:checked ~ * #nav-desp{ /* NO ANDA: buscar solucion*/
     visibility: visible;
     
 }
 
 
-/*----------------SECTION 2----------------*/
-    #conteiner-sec2{
-        font-size: 1.99rem;
-    }
-
-}
 
 
 
