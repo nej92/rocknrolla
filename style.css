@@ -70,24 +70,69 @@ header{
 }
 /*-------------------------------SECTION 1----------------------------------*/
 #conteiner-sec1{
-    font-size: 3rem;
-    overflow: hidden;
-    height: 19em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 900px;
+    
     background: url("imgs/explooo.gif");
     background-size: cover;
     background-position: center;
 }
 
-#video-explo{
-    margin-top: 2.8em;
-    width: 100%;
-    height: 100%;
-    border: solid 2px red;
-    background: url("imgs/explo19.mp4");
-    background-size: cover;
-    background-position: center;
-    z-index: 90;
+#text-conteiner{
+    font-size: 3rem;
+    text-align: center;
+    height: auto;
+}
+
+#tu-idea{
+    font-family: bebas NEUE;
+    font-size: 1.5em;
+    padding-top: .7em ;
+    padding-bottom: .7em;
+    color: #ffff;
+    margin-bottom: .2em;
+}
+
+#dupla{
+    font-family: bebas NEUE;
+    color: #ffff;
+    font-size: .7em;
+    margin-top: 1em;
+    padding-top: .7em ;
+    padding-bottom: .7em ;
+}
+
+#conocenos{
+    font-size: .4em;
+    background-color: #F9E721;
+    margin-top: 3em;
+    padding: .5em ;
     
+}
+
+span{
+    text-decoration: underline;
+}
+
+/*-------------------------------SECTION 2----------------------------------*/
+#conteiner-sec2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+}
+
+#desafios{
+    font-family: bebas NEUE;
+}
+
+#contact{
+    font-family: roboto CONDENSED;
 }
 
 /*-------------------------------RESPONSIVE----------------------------------*/
@@ -99,24 +144,18 @@ header{
 
 }*/
 
-@media (min-aspect-ratio: 16/9){
-    #video-explo{
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-aspect-ratio: 16/9){
-    #video-explo{
-        width: auto;
-        height: 100%;
-    }
-}
-
 @media (max-width: 768px){
+
+/*-------------------------------SECTION 1----------------------------------*/
     #video-explo{
         display: none;
     }
+
+    #conocenos{
+        font-size: .5em;
+    }
+
+
 }
 
 @media (max-width: 621px){
@@ -167,72 +206,84 @@ header{
         visibility: hidden;
     }
 
+    /*--------BTN HAMBUR--------*/
+    #cont-btn-hambur{
+        display: block;
+    }
+
+    #menu-mobile{
+        visibility: visible;
+        width: 1em;
+        margin-right: .7em;   
+    }
+
+    #cross-mobile{
+        display: none;
+        visibility: hidden;
+        width: .9em;
+        height: .9em;
+        margin-right: .7em;
+    }
+
+    #hambur-check:checked ~ * #menu-mobile{
+        display: none;
+        visibility: hidden;
+    }
+
+    #hambur-check:checked ~ * #cross-mobile{
+        display: block;
+        visibility: visible;
+    }
+
+    /*--------MENU DESPLEGABLE MOBILE--------*/
+    /*#cont-menudespl-mobile{
+        display: block;
+        position: absolute;
+        background-color: #212121;
+        margin-top: 7.3em;
+        width: 100%;
+        border-top: double 5px #ffff; */
+
 /*-------------------------------SECTION 1----------------------------------*/
-#conteiner-sec1{
-    font-size: 2rem;
-}
-
-/*--------BTN HAMBUR--------*/
-#cont-btn-hambur{
-    display: block;
-}
-
-#menu-mobile{
-    visibility: visible;
-    width: 1em;
-    margin-right: .7em;   
-}
-
-#cross-mobile{
-    display: none;
-    visibility: hidden;
-    width: .9em;
-    height: .9em;
-    margin-right: .7em;
-}
-
-#hambur-check:checked ~ * #menu-mobile{
-    display: none;
-    visibility: hidden;
-}
-
-#hambur-check:checked ~ * #cross-mobile{
-    display: block;
-    visibility: visible;
-}
-
-/*--------MENU DESPLEGABLE MOBILE--------*/
-/*#cont-menudespl-mobile{
-    display: block;
-    position: absolute;
-    background-color: #212121;
-    margin-top: 7.3em;
-    width: 100%;
-    border-top: double 5px #ffff; */
-}
-
-#nav-desp{
-    display: flex;
-    position: absolute;
-    background-color: #212121;
-    margin-top: 7.3em;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 5em;
-}
-
-.menu-despl{
-    font-family: bebas NEUE;
-    font-size: .7em;
-    color: #ffff;
-    text-decoration: none;
-}
-
-#hambur-check:checked ~ * #nav-desp{ /* NO ANDA: buscar solucion*/
-    visibility: visible;
     
+    #conteiner-sec1{
+        height: 600px;
+    }
+
+    #text-conteiner{
+        font-size: 1.8em;
+    }
+
+
+/*-----------------------------------------------------------------*/ 
+    #nav-desp{
+        display: flex;
+        position: absolute;
+        background-color: #212121;
+        margin-top: 7.3em;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 5em;
+    }
+    
+    .menu-despl{
+        font-family: bebas NEUE;
+        font-size: .7em;
+        color: #ffff;
+        text-decoration: none;
+    }
+    
+    #hambur-check:checked ~ * #nav-desp{ /* NO ANDA: buscar solucion*/
+        visibility: visible;
+        
+    }
+
+
+
+
+
 }
 
 
