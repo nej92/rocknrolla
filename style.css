@@ -7,7 +7,7 @@ html{
     font-family: roboto CONDENSED;
 }
 /*-------------------------------HEADER----------------------------------*/
-header{
+#header{
     position: fixed;
     top: 0;
     display: flex;
@@ -126,7 +126,7 @@ span{
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 200px;
+    height: 20em;
     font-size: 1rem;
     margin-top: 3.5em;
     margin-bottom: 3.5em;
@@ -141,7 +141,20 @@ span{
 #contact{
     font-family: roboto CONDENSED;
     font-size: 1.5em;
+    padding-bottom: .5em;
     color: #212121;
+}
+
+.section2-redes{
+    width: 3em;
+    height: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.section2-redes:hover{
+    background-color: #F9E721;
+    transition: .8s;
 }
 
 /*-------------------------------CAROUSEL----------------------------------*/
@@ -150,14 +163,26 @@ span{
     align-items: center;
     width: 100%;
     font-size: 2rem;
-    height: 22.5em;
+    height: 24em;
     background-color: #212121;
+}
+
+#portfolio-title{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    font-family: bebas NEUE;
+    font-size: 2em;
+    color: #ffff;
+    padding-top: em;
 }
 
 .carousel-inner{
     display: flex;
     align-items: center;
     height: 100%;
+    padding-top: em;
 }
 
 .div{
@@ -170,6 +195,33 @@ span{
 .img-carou{
     width: 18em;
     height: 18em;
+}
+
+.behance-text{
+    font-size: .8em;
+    color: #ffff;
+    padding-top: .5em;
+}
+
+.behance-text:hover{
+    color: #F9E721;
+    text-decoration: none;
+}
+
+/*-------------------------------FOOTER----------------------------------*/
+#footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    width: 100%;
+    height: 5em;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+#contact-foot{
+    text-align: center;
 }
 
 /*-------------------------------RESPONSIVE----------------------------------*/
@@ -231,14 +283,14 @@ span{
         visibility: hidden;
     }
 
-
+/*-------------------------------SECTION 2----------------------------------*/
     #desafios{
         text-align: center;
     }
 
-    .img-carou{
-        width: 12em;
-        height: 12em;
+/*--------------------------------CAROUSEL---------------------------------*/
+    #carousel1{
+        font-size: 1.5rem;
     }
 
 }
@@ -302,13 +354,9 @@ span{
         font-size: 1.8em;
     }
 
-/*-------------------------------SECTION 2----------------------------------*/
-    #desafios{
-        font-size: 2em;
-    }      
-
-    #contact{
-        font-size: 1.2em;
+/*-------------------------------SECTION 2----------------------------------*/    
+    #conteiner-sec2{
+        font-size: .6em;
     }
 
 /*-----------------------------------------------------------------*/ 
@@ -336,13 +384,9 @@ span{
         
     }
 
-    .img-carou{
-        width: 10em;
-        height: 10em;
-    }
-
+/*--------------------------------CAROUSEL---------------------------------*/
     #carousel1{
-        height: 400px;
+        font-size: 1rem;
     }
 
 
