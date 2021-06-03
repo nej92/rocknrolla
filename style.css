@@ -8,8 +8,8 @@ html{
 }
 /*-------------------------------HEADER----------------------------------*/
 header{
-    position: relative;
     position: fixed;
+    top: 0;
     display: flex;
     width: 100%;
     height: 2.3em;
@@ -73,8 +73,9 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 140px;
     width: 100%;
-    height: 900px;
+    height: 800px;
     
     background: url("imgs/explooo.gif");
     background-size: cover;
@@ -106,6 +107,7 @@ header{
 }
 
 #conocenos{
+    font-family: roboto CONDENSED 700;
     font-size: .4em;
     background-color: #F9E721;
     margin-top: 3em;
@@ -125,24 +127,60 @@ span{
     flex-direction: column;
     width: 100%;
     height: 200px;
+    font-size: 1rem;
+    margin-top: 3.5em;
+    margin-bottom: 3.5em;
 }
 
 #desafios{
     font-family: bebas NEUE;
+    font-size: 4em;
+    color: #212121;
 }
 
 #contact{
     font-family: roboto CONDENSED;
+    font-size: 1.5em;
+    color: #212121;
+}
+
+/*-------------------------------CAROUSEL----------------------------------*/
+#carousel1{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 2rem;
+    height: 22.5em;
+    background-color: #212121;
+}
+
+.carousel-inner{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.img-carou{
+    width: 18em;
+    height: 18em;
 }
 
 /*-------------------------------RESPONSIVE----------------------------------*/
 /*-------------------------------RESPONSIVE----------------------------------*/
 /*-------------------------------RESPONSIVE----------------------------------*/
 /*-------------------------------RESPONSIVE----------------------------------*/
-/*
-@media (max-width: 1280px){
 
-}*/
+@media (max-width: 1280px){
+    
+    
+}
 
 @media (max-width: 768px){
 
@@ -191,6 +229,16 @@ span{
     #nav-menu{
         font-size: .6rem;
         visibility: hidden;
+    }
+
+
+    #desafios{
+        text-align: center;
+    }
+
+    .img-carou{
+        width: 12em;
+        height: 12em;
     }
 
 }
@@ -244,16 +292,24 @@ span{
         width: 100%;
         border-top: double 5px #ffff; */
 
-/*-------------------------------SECTION 1----------------------------------*/
-    
+/*-------------------------------SECTION 1----------------------------------*/    
     #conteiner-sec1{
         height: 600px;
+        margin-top: 90px;
     }
 
     #text-conteiner{
         font-size: 1.8em;
     }
 
+/*-------------------------------SECTION 2----------------------------------*/
+    #desafios{
+        font-size: 2em;
+    }      
+
+    #contact{
+        font-size: 1.2em;
+    }
 
 /*-----------------------------------------------------------------*/ 
     #nav-desp{
@@ -280,7 +336,14 @@ span{
         
     }
 
+    .img-carou{
+        width: 10em;
+        height: 10em;
+    }
 
+    #carousel1{
+        height: 400px;
+    }
 
 
 
