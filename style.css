@@ -112,6 +112,8 @@ html{
     background-color: #F9E721;
     margin-top: 3em;
     padding: .5em ;
+    border-radius: 8%;
+    
     
 }
 
@@ -156,6 +158,8 @@ span{
     background-color: #F9E721;
     transition: .8s;
 }
+
+
 
 /*-------------------------------CAROUSEL----------------------------------*/
 #carousel1{
@@ -218,10 +222,34 @@ span{
     height: 5em;
     padding-left: 5em;
     padding-right: 5em;
+
+}
+
+#redes-foot{
+    display: flex;
+    flex-direction: column;
+}
+
+.redes-foot-imgs{
+    width: .8em;
+    height: .8em;
+    
 }
 
 #contact-foot{
     text-align: center;
+    
+}
+
+#contact-foot{
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+#city-foot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*-------------------------------RESPONSIVE----------------------------------*/
@@ -230,7 +258,6 @@ span{
 /*-------------------------------RESPONSIVE----------------------------------*/
 
 @media (max-width: 1280px){
-    
     
 }
 
@@ -243,6 +270,11 @@ span{
 
     #conocenos{
         font-size: .5em;
+    }
+
+/*-------------------------------FOOTER----------------------------------*/
+    #footer{
+        font-size: 1rem;
     }
 
 
@@ -387,6 +419,25 @@ span{
 /*--------------------------------CAROUSEL---------------------------------*/
     #carousel1{
         font-size: 1rem;
+    }
+
+/*-------------------------------FOOTER----------------------------------*/
+
+    #footer{
+        font-size: .5rem;
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+
+    .footer-text-size{
+        font-size: 1.3em;
+    }
+
+    .redes-foot-imgs{
+        width: 1.5em;
+        height: 1.5em;
+        margin-top: .5em;
+        margin-bottom: .5em;
     }
 
 

@@ -1,0 +1,107 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/*-------------------------------HEADER----------------------------------*/
+#header{
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 2.3em;
+    font-size: 3.8rem;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #212121;
+    z-index: 100;
+}
+
+#logo-header{
+    width: 3.3em;
+    height: 2.5em;
+    padding-left: .5em;
+}
+
+#nav-menu{
+    font-size: 1rem;
+    padding-right: 1.2em;
+}
+
+.menu-header{
+    font-family: bebas NEUE;
+    font-size: 1.3em;
+    color: #ffff;
+    text-decoration: none;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.menu-header:hover{
+    text-decoration: underline;
+    color: #F9E721;
+    transition: .7s;
+}
+
+/*--------MENU DESPLEGABLE MOBILE--------*/
+#nav-desp{
+    display: none;
+    visibility: hidden;
+}
+
+/*--------BTN HAMBUR--------*/
+#cont-btn-hambur{
+    display: none;
+}
+
+#hambur-check{
+    display: none;
+}
+
+#menu-mobile{
+    visibility: hidden;
+}
+
+#cross-mobile{
+    visibility: hidden;
+}
+
+/*-------------------------------LA DUPLA CREATIVA----------------------------------*/
+.title-dupla{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 2rem;
+    height: auto;
+    margin-top: 5em;
+    margin-bottom: 1em;
+}
+
+.cont-dupla{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    height: auto;
+    margin-top: 5em;
+    width: 100%;
+}
+
+.vid-chicas{
+    width: 20em;
+    height: 25em;
+}
+
+.texto-chicas{
+    width: 25em;
+}
+
+.cont-chichas{
+    width: 100%;
+    padding-left: 10em;
+    padding-right: 10em;
+}
+
+.texto-chicas{
+    width: 100%;
+}
