@@ -1,0 +1,461 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/*-------------------------------HEADER----------------------------------*/
+#header{
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 2.3em;
+    font-size: 3.8rem;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #212121;
+    z-index: 100;
+}
+
+#logo-header{
+    width: 3.3em;
+    height: 2.5em;
+    padding-left: .5em;
+}
+
+#nav-menu{
+    font-size: 1rem;
+    padding-right: 1.2em;
+}
+
+.menu-header{
+    font-family: bebas NEUE;
+    font-size: 1.3em;
+    color: #ffff;
+    text-decoration: none;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.menu-header:hover{
+    text-decoration: underline;
+    color: #F9E721;
+    transition: .7s;
+}
+
+/*--------MENU DESPLEGABLE MOBILE--------*/
+#nav-desp{
+    display: none;
+    visibility: hidden;
+}
+
+/*--------BTN HAMBUR--------*/
+#cont-btn-hambur{
+    display: none;
+}
+
+#hambur-check{
+    display: none;
+}
+
+#menu-mobile{
+    visibility: hidden;
+}
+
+#cross-mobile{
+    visibility: hidden;
+}
+
+/*-------------------------------LA DUPLA CREATIVA----------------------------------*/
+.cont-title-dupla{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 2rem;
+    height: auto;
+    margin-top: 5em;
+    margin-bottom: 1em;
+}
+
+        .title-dupla{
+            
+            color: #7A7A7A;
+        }
+
+        span{
+            font-weight: bold;
+            
+        }
+
+        .duplacreativa{
+            font-size: 2em;
+            font-family: bebas NEUE;
+        }
+
+        .yingyang{
+            font-size: .7em;
+            font-family: roboto CONDENSED;
+            font-weight: 500;
+        }
+
+
+.cont-dupla{
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    width: 100%;
+    height: auto;
+
+    border: solid 2px red;
+}
+
+        .cont-mar{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 28em;
+            height: auto;
+
+            border: solid 2px red;
+        }
+
+        .cont-sol{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 28em;
+            height: auto;
+
+            border: solid 2px red;
+        }
+
+                .cont-text-sol{
+                    width: 16.9em;
+                    text-align: justify;
+                    
+                }
+
+                .cont-text-mar{
+                    width: 16.9em;
+                    text-align: justify;
+                    
+                }
+
+                    .vid-chicas{
+                        
+                        height: 30em;
+                    }
+
+                    .marysol{
+                        font-family: bebas NEUE;
+                        font-size: 1.2em;
+                        padding-top: .2em;
+                        padding-bottom: .2em;
+                        color: #7A7A7A;                      
+                    }
+
+                    .text-chicas{
+                        
+                        font-size: .7em;
+                        padding-top: .2em;
+                        padding-bottom: .2em;
+                        font-family: roboto CONDENSED;
+                        color: #7A7A7A;
+                    }
+
+/*-------------------------------HISTORIA----------------------------------*/
+.cont-historia{
+    width: 100%;
+    height: auto;
+    background-color: #212121;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+    .cont-elements-histo{
+        display: flex;
+        flex-direction: column;
+        width: 36em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+        .asi-arranco{
+            font-size: 1.5em;
+            font-family: bebas NEUE;
+            width: 100%;
+            color: #7A7A7A;
+        }
+
+        .podriamos-decir{
+            font-size: .8em;
+            width: 100%;
+            font-family: roboto CONDENSED;
+            text-align: justify;
+            color: #7A7A7A;
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+
+        .span-de-historia{
+            color: #ffff;
+            opacity: .5;
+        }
+
+/*-------------------------------FORMULARIO----------------------------------*/
+.cont-formulario{
+    width: 100%;
+    height: auto;
+}
+
+/*-------------------------------FOOTER----------------------------------*/
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    width: 100%;
+    height: 5em;
+
+}
+
+        .redes-foot{
+            display: flex;
+        }
+
+        .redes-foot-imgs{
+            width: .8em;
+            height: .8em;
+            padding-left: 3em;
+        }
+
+        .contact-foot{
+            text-align: center;
+            
+        }
+
+        .city-foot{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-right: 3em;
+        }
+
+
+/*-------------------------------RESPONSIVE----------------------------------*/
+/*-------------------------------RESPONSIVE----------------------------------*/
+/*-------------------------------RESPONSIVE----------------------------------*/
+/*-------------------------------RESPONSIVE----------------------------------*/
+@media (max-width: 1280px){
+    /*ARREGLAR cont-dupla*/
+
+
+/*-------------------------------LA HISTORIA----------------------------------*/
+    .cont-historia{
+        font-size: 1.5rem;
+    }
+
+
+
+
+
+
+}
+
+@media (max-width: 768px){
+    .cont-title-dupla{
+        font-size: 1.7rem;
+        margin-top: 5.2em;
+        margin-bottom: .5em;
+    }
+    
+    .cont-dupla{
+        font-size: .8rem;
+    }
+
+
+/*-------------------------------LA HISTORIA----------------------------------*/
+    .cont-historia{
+        font-size: 1.1rem;
+    }
+
+/*-------------------------------FOOTER----------------------------------*/
+    #footer{
+        font-size: 1rem;
+    }
+
+    
+}
+
+@media (max-width: 621px){
+    /*--------BTN HAMBUR--------*/
+    #cont-btn-hambur{
+        display: block;
+    }
+
+    #menu-mobile{
+        visibility: visible;
+        width: 1em;
+        margin-right: .7em;   
+    }
+
+    #cross-mobile{
+        display: none;
+        visibility: hidden;
+        width: .9em;
+        height: .9em;
+        margin-right: .7em;
+    }
+
+    #hambur-check:checked ~ * #menu-mobile{
+        display: none;
+        visibility: hidden;
+    }
+
+    #hambur-check:checked ~ * #cross-mobile{
+        display: block;
+        visibility: visible;
+    }
+
+    #nav-menu{
+        font-size: .6rem;
+        visibility: hidden;
+    }
+
+
+
+
+
+}
+    @media (max-width: 375px){
+        /*----------------HAMBUR----------------*/
+            header{
+                font-size: 2.5rem;
+            }
+            
+            #nav-menu{
+                font-size: .6rem;
+                visibility: hidden;
+            }
+        
+            /*--------BTN HAMBUR--------*/
+            #cont-btn-hambur{
+                display: block;
+            }
+        
+            #menu-mobile{
+                visibility: visible;
+                width: 1em;
+                margin-right: .7em;   
+            }
+        
+            #cross-mobile{
+                display: none;
+                visibility: hidden;
+                width: .9em;
+                height: .9em;
+                margin-right: .7em;
+            }
+        
+            #hambur-check:checked ~ * #menu-mobile{
+                display: none;
+                visibility: hidden;
+            }
+        
+            #hambur-check:checked ~ * #cross-mobile{
+                display: block;
+                visibility: visible;
+            }
+
+/*--------MENU DESPLEGABLE MOBILE--------*/
+    /*#cont-menudespl-mobile{
+        display: block;
+        position: absolute;
+        background-color: #212121;
+        margin-top: 7.3em;
+        width: 100%;
+        border-top: double 5px #ffff; */
+    
+/*-----------------------------------------------------------------*/ 
+        #nav-desp{
+            display: flex;
+            position: absolute;
+            background-color: #212121;
+            margin-top: 7.3em;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 5em;
+        }
+
+        .menu-despl{
+            font-family: bebas NEUE;
+            font-size: .7em;
+            color: #ffff;
+            text-decoration: none;
+        }
+
+        #hambur-check:checked ~ * #nav-desp{ /* NO ANDA: buscar solucion*/
+            visibility: visible;
+            
+        }
+
+/*-------------------------------LA DUPLA CREATIVA----------------------------------*/
+
+        .cont-title-dupla{
+            font-size: .9rem;
+            margin-top: 10em;
+        }
+
+        .cont-sol{
+            width: 14em;
+        }
+
+        .cont-mar{
+            width: 14em;
+        }
+
+        .cont-text-mar{
+            width: 11.3em;
+        }
+
+        .cont-text-sol{
+            width: 11.3em;
+        }
+
+        .vid-chicas{
+            height: 20em;
+        }
+
+/*-------------------------------LA HISTORIA----------------------------------*/
+    .cont-historia{
+        font-size: .6rem;
+    }
+
+/*-------------------------------FOOTER----------------------------------*/
+
+    #footer{
+        font-size: .5rem;
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+
+    .footer-text-size{
+        font-size: 1.3em;
+    }
+
+    .redes-foot-imgs{
+        width: 1.5em;
+        height: 1.5em;
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }
+
+
+
+
+
+}
