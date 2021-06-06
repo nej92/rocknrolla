@@ -176,11 +176,6 @@ span{
     padding-top: em;
 }
 
-.portfolio-title:hover{
-    color: #F9E721;
-    transition: .5s;
-}
-
 .carousel-inner{
     display: flex;
     align-items: center;
