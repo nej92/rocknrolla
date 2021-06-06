@@ -102,48 +102,37 @@
 
 .cont-dupla{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     font-size: 2rem;
     width: 100%;
     height: auto;
-
-    border: solid 2px red;
+    margin-bottom: 1.8em;
+    
 }
 
         .cont-mar{
             display: flex;
             flex-direction: column;
-            align-items: flex-end;
-            width: 28em;
+            
+            width: 16.9em;
             height: auto;
+            text-align: justify;
+            margin-right: .3em;
 
-            border: solid 2px red;
         }
 
         .cont-sol{
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
-            width: 28em;
+            
+            width: 16.9em;
             height: auto;
+            text-align: justify;
+            margin-left: .3em;
 
-            border: solid 2px red;
         }
 
-                .cont-text-sol{
-                    width: 16.9em;
-                    text-align: justify;
-                    
-                }
-
-                .cont-text-mar{
-                    width: 16.9em;
-                    text-align: justify;
-                    
-                }
-
                     .vid-chicas{
-                        
                         height: 30em;
                     }
 
@@ -177,7 +166,7 @@
     .cont-elements-histo{
         display: flex;
         flex-direction: column;
-        width: 36em;
+        width: 34.9em;
         padding-top: 2em;
         padding-bottom: 2em;
     }
@@ -215,7 +204,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.7rem;
     width: 100%;
     height: 5em;
 
@@ -223,17 +212,24 @@
 
         .redes-foot{
             display: flex;
+            padding-left: 3em;
         }
 
         .redes-foot-imgs{
             width: .8em;
             height: .8em;
-            padding-left: 3em;
+            margin-left: .5em;
+            margin-right: .5em;
         }
 
         .contact-foot{
             text-align: center;
-            
+        }
+
+        .footer-text-size{
+            font-size: .65em;
+            font-family: roboto CONDENSED;
+            color: #7A7A7A;
         }
 
         .city-foot{
@@ -243,22 +239,19 @@
             padding-right: 3em;
         }
 
-
 /*-------------------------------RESPONSIVE----------------------------------*/
 /*-------------------------------RESPONSIVE----------------------------------*/
 /*-------------------------------RESPONSIVE----------------------------------*/
 /*-------------------------------RESPONSIVE----------------------------------*/
 @media (max-width: 1280px){
-    /*ARREGLAR cont-dupla*/
-
-
 /*-------------------------------LA HISTORIA----------------------------------*/
     .cont-historia{
         font-size: 1.5rem;
     }
 
-
-
+    .cont-dupla{
+        font-size: 1.5rem;
+    }
 
 
 
@@ -281,10 +274,18 @@
         font-size: 1.1rem;
     }
 
-/*-------------------------------FOOTER----------------------------------*/
-    #footer{
-        font-size: 1rem;
+    .cont-elements-histo{
+        width: 29em;
     }
+
+
+
+/*-------------------------------FOOTER----------------------------------*/
+    .footer{
+        font-size: 1.7rem;
+    }
+
+
 
     
 }
@@ -324,14 +325,26 @@
         visibility: hidden;
     }
 
+/*-------------------------------LA HISTORIA----------------------------------*/
+    .cont-elements-histo{
+        width: 25em;
+    }
 
+/*-------------------------------FOOTER----------------------------------*/
+    .footer{
+        font-size: 1.1rem;
+    }
+
+    
 
 
 
 }
+
+
     @media (max-width: 375px){
         /*----------------HAMBUR----------------*/
-            header{
+            #header{
                 font-size: 2.5rem;
             }
             
@@ -406,28 +419,16 @@
 /*-------------------------------LA DUPLA CREATIVA----------------------------------*/
 
         .cont-title-dupla{
-            font-size: .9rem;
-            margin-top: 10em;
+            font-size: 1.1rem;
         }
 
-        .cont-sol{
-            width: 14em;
+        .cont-dupla{
+            flex-direction: column;
+            align-items: center;
         }
-
+    
         .cont-mar{
-            width: 14em;
-        }
-
-        .cont-text-mar{
-            width: 11.3em;
-        }
-
-        .cont-text-sol{
-            width: 11.3em;
-        }
-
-        .vid-chicas{
-            height: 20em;
+            margin-bottom: 3em;
         }
 
 /*-------------------------------LA HISTORIA----------------------------------*/
@@ -437,23 +438,11 @@
 
 /*-------------------------------FOOTER----------------------------------*/
 
-    #footer{
-        font-size: .5rem;
-        padding-top: 5em;
-        padding-bottom: 5em;
+    .footer{
+        font-size: .8rem;
     }
 
-    .footer-text-size{
-        font-size: 1.3em;
-    }
-
-    .redes-foot-imgs{
-        width: 1.5em;
-        height: 1.5em;
-        margin-top: .5em;
-        margin-bottom: .5em;
-    }
-
+    
 
 
 
