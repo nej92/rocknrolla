@@ -170,14 +170,18 @@ span {
   font-family: bebas NEUE;
   font-size: 2em;
   color: #ffff;
-  padding-top: em;
 }
 
 .carousel-inner {
   display: flex;
   align-items: center;
   height: 100%;
-  padding-top: em;
+  padding-top: 1.5em;
+}
+
+.carousel-item {
+  width: 100%;
+  text-align: center;
 }
 
 .div {
@@ -326,7 +330,7 @@ a img {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 440px) {
   /*----------------HAMBUR----------------*/
   #header {
     font-size: 2.5rem;
@@ -450,5 +454,5 @@ amarillo
 
 TITULOS. BEBAS NEUE
 TEXTOS: ROBOTO CONDENSED
-NOTAS COMENTARIOS: OLD STANDARD 
+NOTAS COMENTARIOS: OLD STANDARD
 */

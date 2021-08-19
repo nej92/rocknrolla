@@ -1,452 +1,422 @@
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+  padding: 0px;
+  margin: 0px;
 }
 
-html{
-    font-family: roboto CONDENSED;
+html {
+  font-family: roboto CONDENSED;
 }
 /*-------------------------------HEADER----------------------------------*/
-#header{
-    position: fixed;
-    top: 0;
-    display: flex;
-    width: 100%;
-    height: 2.3em;
-    font-size: 3.8rem;
-    justify-content:space-between;
-    align-items: center;
-    background-color: #212121;
-    z-index: 100;
+#header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 2.3em;
+  font-size: 3.8rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #212121;
+  z-index: 100;
 }
 
-#logo-header{
-    width: 3.3em;
-    height: 2.5em;
-    padding-left: .5em;
-
+#logo-header {
+  width: 3.3em;
+  height: 2.5em;
+  padding-left: 0.5em;
 }
 
-#nav-menu{
-    font-size: 1rem;
-    padding-right: 1.2em;
+#nav-menu {
+  font-size: 1rem;
+  padding-right: 1.2em;
 }
 
-.menu-header{
-    font-family: bebas NEUE;
-    font-size: 1.3em;
-    color: #ffff;
-    text-decoration: none;
-    margin-left: 1em;
-    margin-right: 1em;
+.menu-header {
+  font-family: bebas NEUE;
+  font-size: 1.3em;
+  color: #ffff;
+  text-decoration: none;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
-.menu-header:hover{
-    text-decoration: underline;
-    color: #F9E721;
-    transition: .7s;
+.menu-header:hover {
+  text-decoration: underline;
+  color: #f9e721;
+  transition: 0.7s;
 }
 
 /*--------MENU DESPLEGABLE MOBILE--------*/
-#nav-desp{
-    display: none;
-    visibility: hidden;
+#nav-desp {
+  display: none;
+  visibility: hidden;
 }
 
 /*--------BTN HAMBUR--------*/
-#cont-btn-hambur{
-    display: none;
+#cont-btn-hambur {
+  display: none;
 }
 
-#hambur-check{
-    display: none;
+#hambur-check {
+  display: none;
 }
 
-#menu-mobile{
-    visibility: hidden;
+#menu-mobile {
+  visibility: hidden;
 }
 
-#cross-mobile{
-    visibility: hidden;
+#cross-mobile {
+  visibility: hidden;
 }
 
 /*-------------------------------LA DUPLA CREATIVA----------------------------------*/
-.cont-title-dupla{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    font-size: 2rem;
-    height: auto;
-    margin-top: 5em;
-    margin-bottom: 1em;
+.cont-title-dupla {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  font-size: 2rem;
+  height: auto;
+  margin-top: 5em;
+  margin-bottom: 1em;
 }
 
-        .title-dupla{
-            
-            color: #7A7A7A;
-        }
-
-        span{
-            font-weight: bold;
-            
-        }
-
-        .duplacreativa{
-            font-size: 2em;
-            font-family: bebas NEUE;
-        }
-
-        .yingyang{
-            font-size: .7em;
-            font-family: roboto CONDENSED;
-            font-weight: 500;
-        }
-
-
-.cont-dupla{
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
-    width: 100%;
-    height: auto;
-    margin-bottom: 1.8em;
-    
+.title-dupla {
+  color: #7a7a7a;
 }
 
-        .cont-mar{
-            display: flex;
-            flex-direction: column;
-            
-            width: 16.9em;
-            height: auto;
-            text-align: justify;
-            margin-right: .3em;
+span {
+  font-weight: bold;
+}
 
-        }
+.duplacreativa {
+  font-size: 2em;
+  font-family: bebas NEUE;
+}
 
-        .cont-sol{
-            display: flex;
-            flex-direction: column;
-            
-            width: 16.9em;
-            height: auto;
-            text-align: justify;
-            margin-left: .3em;
+.yingyang {
+  font-size: 0.7em;
+  font-family: roboto CONDENSED;
+  font-weight: 500;
+}
 
-        }
+.cont-dupla {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.8em;
+}
 
-                    .vid-chicas{
-                        height: 30em;
-                    }
+.cont-mar {
+  display: flex;
+  flex-direction: column;
 
-                    .marysol{
-                        font-family: bebas NEUE;
-                        font-size: 1.2em;
-                        padding-top: .2em;
-                        padding-bottom: .2em;
-                        color: #7A7A7A;                      
-                    }
+  width: 16.9em;
+  height: auto;
+  text-align: justify;
+  margin-right: 0.3em;
+}
 
-                    .text-chicas{
-                        
-                        font-size: .7em;
-                        padding-top: .2em;
-                        padding-bottom: .2em;
-                        font-family: roboto CONDENSED;
-                        color: #7A7A7A;
-                    }
+.cont-sol {
+  display: flex;
+  flex-direction: column;
+
+  width: 16.9em;
+  height: auto;
+  text-align: justify;
+  margin-left: 0.3em;
+}
+
+.vid-chicas {
+  height: 30em;
+}
+
+.marysol {
+  font-family: bebas NEUE;
+  font-size: 1.2em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  color: #7a7a7a;
+}
+
+.text-chicas {
+  font-size: 0.7em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  font-family: roboto CONDENSED;
+  color: #7a7a7a;
+}
 
 /*-------------------------------HISTORIA----------------------------------*/
-.cont-historia{
-    width: 100%;
-    height: auto;
-    background-color: #212121;
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
+.cont-historia {
+  width: 100%;
+  height: auto;
+  background-color: #212121;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
-    .cont-elements-histo{
-        display: flex;
-        flex-direction: column;
-        width: 34.9em;
-        padding-top: 2em;
-        padding-bottom: 2em;
-    }
+.cont-elements-histo {
+  display: flex;
+  flex-direction: column;
+  width: 34.9em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
 
-        .asi-arranco{
-            font-size: 1.5em;
-            font-family: bebas NEUE;
-            width: 100%;
-            color: #7A7A7A;
-        }
+.asi-arranco {
+  font-size: 1.5em;
+  font-family: bebas NEUE;
+  width: 100%;
+  color: #7a7a7a;
+}
 
-        .podriamos-decir{
-            font-size: .8em;
-            width: 100%;
-            font-family: roboto CONDENSED;
-            text-align: justify;
-            color: #7A7A7A;
-            padding-top: 1em;
-            padding-bottom: 1em;
-        }
+.podriamos-decir {
+  font-size: 0.8em;
+  width: 100%;
+  font-family: roboto CONDENSED;
+  text-align: justify;
+  color: #7a7a7a;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
 
-        .span-de-historia{
-            color: #ffff;
-            opacity: .5;
-        }
+.span-de-historia {
+  color: #ffff;
+  opacity: 0.5;
+}
 
 /*-------------------------------FORMULARIO----------------------------------*/
-.cont-formulario{
-    width: 100%;
-    height: auto;
+.cont-formulario {
+  width: 100%;
+  height: auto;
 }
 
 /*-------------------------------FOOTER----------------------------------*/
-.footer{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 2rem;
-    width: 100%;
-    height: 5em;
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
+  width: 100%;
+  height: 5em;
 }
 
-        .redes-foot{
-            display: flex;
-        }
+.redes-foot {
+  display: flex;
+}
 
-        .redes-foot-imgs{
-            width: .8em;
-            height: .8em;
-            margin-left: .3em;
-            margin-right: .3em;
-        }
+.redes-foot-imgs {
+  width: 0.8em;
+  height: 0.8em;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+}
 
-        .contact-foot{
-            text-align: center;
-        }
+.contact-foot {
+  text-align: center;
+}
 
-        .footer-text-size{
-            font-size: .6em;
-            font-family: roboto CONDENSED;
-            font-weight: 400;
-            color: #7A7A7A;
-        }
+.footer-text-size {
+  font-size: 0.6em;
+  font-family: roboto CONDENSED;
+  font-weight: 400;
+  color: #7a7a7a;
+}
 
-        .city-foot{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+.city-foot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 /*-------------------------------RESPONSIVE----------------------------------*/
 /*-------------------------------RESPONSIVE----------------------------------*/
 /*-------------------------------RESPONSIVE----------------------------------*/
 /*-------------------------------RESPONSIVE----------------------------------*/
-@media (max-width: 1280px){
-/*-------------------------------LA HISTORIA----------------------------------*/
-    .cont-historia{
-        font-size: 1.5rem;
-    }
+@media (max-width: 1280px) {
+  /*-------------------------------LA HISTORIA----------------------------------*/
+  .cont-historia {
+    font-size: 1.5rem;
+  }
 
-    .cont-dupla{
-        font-size: 1.5rem;
-    }
-
-
-
+  .cont-dupla {
+    font-size: 1.5rem;
+  }
 }
 
-@media (max-width: 768px){
-    .cont-title-dupla{
-        font-size: 1.7rem;
-        margin-top: 5.2em;
-        margin-bottom: .5em;
-    }
-    
-    .cont-dupla{
-        font-size: .8rem;
-    }
+@media (max-width: 768px) {
+  .cont-title-dupla {
+    font-size: 1.7rem;
+    margin-top: 5.2em;
+    margin-bottom: 0.5em;
+  }
 
+  .cont-dupla {
+    font-size: 0.8rem;
+  }
 
-/*-------------------------------LA HISTORIA----------------------------------*/
-    .cont-historia{
-        font-size: 1.1rem;
-    }
+  /*-------------------------------LA HISTORIA----------------------------------*/
+  .cont-historia {
+    font-size: 1.1rem;
+  }
 
-    .cont-elements-histo{
-        width: 29em;
-    }
+  .cont-elements-histo {
+    width: 29em;
+  }
 
-
-
-/*-------------------------------FOOTER----------------------------------*/
-    .footer{
-        font-size: 1.7rem;
-    }
-
-
-
-    
+  /*-------------------------------FOOTER----------------------------------*/
+  .footer {
+    font-size: 1.7rem;
+  }
 }
 
-@media (max-width: 621px){
-    /*--------BTN HAMBUR--------*/
-    #cont-btn-hambur{
-        display: block;
-    }
+@media (max-width: 621px) {
+  /*--------BTN HAMBUR--------*/
+  #cont-btn-hambur {
+    display: block;
+  }
 
-    #menu-mobile{
-        visibility: visible;
-        width: 1em;
-        margin-right: .7em;   
-    }
+  #menu-mobile {
+    visibility: visible;
+    width: 1em;
+    margin-right: 0.7em;
+  }
 
-    #cross-mobile{
-        display: none;
-        visibility: hidden;
-        width: .9em;
-        height: .9em;
-        margin-right: .7em;
-    }
+  #cross-mobile {
+    display: none;
+    visibility: hidden;
+    width: 0.9em;
+    height: 0.9em;
+    margin-right: 0.7em;
+  }
 
-    #hambur-check:checked ~ * #menu-mobile{
-        display: none;
-        visibility: hidden;
-    }
+  #hambur-check:checked ~ * #menu-mobile {
+    display: none;
+    visibility: hidden;
+  }
 
-    #hambur-check:checked ~ * #cross-mobile{
-        display: block;
-        visibility: visible;
-    }
+  #hambur-check:checked ~ * #cross-mobile {
+    display: block;
+    visibility: visible;
+  }
 
-    #nav-menu{
-        font-size: .6rem;
-        visibility: hidden;
-    }
+  #nav-menu {
+    font-size: 0.6rem;
+    visibility: hidden;
+  }
 
-/*-------------------------------LA HISTORIA----------------------------------*/
-    .cont-elements-histo{
-        width: 25em;
-    }
+  /*-------------------------------LA HISTORIA----------------------------------*/
+  .cont-elements-histo {
+    width: 25em;
+  }
 
-/*-------------------------------FOOTER----------------------------------*/
-    .footer{
-        font-size: 1.1rem;
-    }
-
-    
-
-
-
+  /*-------------------------------FOOTER----------------------------------*/
+  .footer {
+    font-size: 1.1rem;
+  }
 }
 
+@media (max-width: 440px) {
+  /*----------------HAMBUR----------------*/
+  #header {
+    font-size: 2.5rem;
+  }
 
-    @media (max-width: 375px){
-        /*----------------HAMBUR----------------*/
-            #header{
-                font-size: 2.5rem;
-            }
-            
-            #nav-menu{
-                font-size: .6rem;
-                visibility: hidden;
-            }
-        
-            /*--------BTN HAMBUR--------*/
-            #cont-btn-hambur{
-                display: block;
-            }
-        
-            #menu-mobile{
-                visibility: visible;
-                width: 1em;
-                margin-right: .7em;   
-            }
-        
-            #cross-mobile{
-                display: none;
-                visibility: hidden;
-                width: .9em;
-                height: .9em;
-                margin-right: .7em;
-            }
-        
-            #hambur-check:checked ~ * #menu-mobile{
-                display: none;
-                visibility: hidden;
-            }
-        
-            #hambur-check:checked ~ * #cross-mobile{
-                display: block;
-                visibility: visible;
-            }
+  #nav-menu {
+    font-size: 0.6rem;
+    visibility: hidden;
+  }
 
-/*--------MENU DESPLEGABLE MOBILE--------*/
-    /*#cont-menudespl-mobile{
+  /*--------BTN HAMBUR--------*/
+  #cont-btn-hambur {
+    display: block;
+  }
+
+  #menu-mobile {
+    visibility: visible;
+    width: 1em;
+    margin-right: 0.7em;
+  }
+
+  #cross-mobile {
+    display: none;
+    visibility: hidden;
+    width: 0.9em;
+    height: 0.9em;
+    margin-right: 0.7em;
+  }
+
+  #hambur-check:checked ~ * #menu-mobile {
+    display: none;
+    visibility: hidden;
+  }
+
+  #hambur-check:checked ~ * #cross-mobile {
+    display: block;
+    visibility: visible;
+  }
+
+  /*--------MENU DESPLEGABLE MOBILE--------*/
+  /*#cont-menudespl-mobile{
         display: block;
         position: absolute;
         background-color: #212121;
         margin-top: 7.3em;
         width: 100%;
         border-top: double 5px #ffff; */
-    
-/*-----------------------------------------------------------------*/ 
-        #nav-desp{
-            display: flex;
-            position: absolute;
-            background-color: #212121;
-            margin-top: 7.3em;
-            width: 100%;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-evenly;
-            height: 5em;
-        }
 
-        .menu-despl{
-            font-family: bebas NEUE;
-            font-size: .7em;
-            color: #ffff;
-            text-decoration: none;
-        }
+  /*-----------------------------------------------------------------*/
+  #nav-desp {
+    display: flex;
+    position: absolute;
+    background-color: #212121;
+    margin-top: 7.3em;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 5em;
+  }
 
-        #hambur-check:checked ~ * #nav-desp{ /* NO ANDA: buscar solucion*/
-            visibility: visible;
-            
-        }
+  .menu-despl {
+    font-family: bebas NEUE;
+    font-size: 0.7em;
+    color: #ffff;
+    text-decoration: none;
+  }
 
-/*-------------------------------LA DUPLA CREATIVA----------------------------------*/
+  #hambur-check:checked ~ * #nav-desp {
+    /* NO ANDA: buscar solucion*/
+    visibility: visible;
+  }
 
-        .cont-title-dupla{
-            font-size: 1.1rem;
-        }
+  /*-------------------------------LA DUPLA CREATIVA----------------------------------*/
 
-        .cont-dupla{
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        .cont-mar{
-            margin-bottom: 3em;
-        }
+  .cont-title-dupla {
+    font-size: 1.1rem;
+  }
 
-/*-------------------------------LA HISTORIA----------------------------------*/
-    .cont-historia{
-        font-size: .6rem;
-    }
+  .cont-dupla {
+    flex-direction: column;
+    align-items: center;
+  }
 
-/*-------------------------------FOOTER----------------------------------*/
+  .cont-mar {
+    margin-bottom: 3em;
+  }
 
-    .footer{
-        font-size: .8rem;
-    }
+  /*-------------------------------LA HISTORIA----------------------------------*/
+  .cont-historia {
+    font-size: 0.6rem;
+  }
 
-    
+  /*-------------------------------FOOTER----------------------------------*/
 
-
-
-
+  .footer {
+    font-size: 0.8rem;
+  }
 }
