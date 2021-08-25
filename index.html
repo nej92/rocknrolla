@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>ROCKNROLLA</title>
 
+    <link rel="icon" href="./imgs/icono-pestañaNEGRO.png">
     <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
@@ -19,7 +20,8 @@
 <!--HEADER-->
     <div id="header">
 
-        <a href="index.html"><img id="logo-header" src="imgs/nuevologo02.png" alt="logo-rocknrolla"></a>
+        <a href="index.html"><img id="logo-header" src="imgs/logo-puño.png" 
+        alt="logo-rocknrolla"></a>
 
         <nav id="nav-menu">
             
@@ -65,7 +67,7 @@
         <h1 id="tu-idea">TU IDEA,</br>NUESTRA CREATIVIDAD</h1>
         <h2 id="dupla">Somos una <span>DUPLA INDEPENDIENTE</span>,</br>
         listas para trabajar con vos de forma personal.</h2>
-       <a href="quienes-somos.html"><button id="conocenos">¡Conocenos!</button></a>
+       <a href="quienes-somos.html"><button class="conocenos">¡Conocenos!</button></a>
     </div>
 
 </div>
@@ -88,8 +90,7 @@
 <!--CAROUSEL-->
 <div id="carousel1" class="carousel slide" data-ride="carousel">
 
-    <a class="portfolio-title" target="_blank" href="https://www.behance.net/rocknrollacreative" 
-    >PORTFOLIO</a>
+    <h6 class="portfolio-title" >PORTFOLIO</h6>
 
     <div class="carousel-inner">
 
@@ -97,13 +98,19 @@
             <a target="_blank" href="https://www.behance.net/rocknrollacreative" class="div">
                 <img class="img-carou" src="imgs/behance001.jpg" alt="" >
             </a>
-            <a class="behance-text" target="_blank" href="https://www.behance.net/rocknrollacreative">behance.net/rocknrollacreative</a>
+            <button class="conocenos">
+                <a target="_blank" href="https://www.behance.net/rocknrollacreative">
+                VER MAS</a>
+            </button>
         </div>
 
         <div class="carousel-item">
             <a target="_blank" href="https://www.behance.net/rocknrollacreative" class="div">
                 <img class="img-carou" src="imgs/behance002.jpg" alt="" >
-                <a class="behance-text" target="_blank" href="https://www.behance.net/rocknrollacreative">behance.net/rocknrollacreative</a>
+                <button class="conocenos">
+                <a target="_blank" href="https://www.behance.net/rocknrollacreative">
+                VER MAS</a>
+            </button>
             </a>
         </div>
 
@@ -111,28 +118,40 @@
             <a target="_blank" href="https://www.behance.net/rocknrollacreative" class="div">
                 <img class="img-carou" src="imgs/behance003.jpg" alt="">
             </a>
-            <a class="behance-text" target="_blank" href="https://www.behance.net/rocknrollacreative">behance.net/rocknrollacreative</a>
+            <button class="conocenos">
+                <a target="_blank" href="https://www.behance.net/rocknrollacreative">
+                VER MAS</a>
+            </button>
         </div>
 
         <div class="carousel-item">
             <a target="_blank" href="https://www.behance.net/rocknrollacreative" class="div">
                 <img class="img-carou" src="imgs/behance02.jpg" alt="">
             </a>
-            <a class="behance-text" target="_blank" href="https://www.behance.net/rocknrollacreative">behance.net/rocknrollacreative</a>
+            <button class="conocenos">
+                <a target="_blank" href="https://www.behance.net/rocknrollacreative">
+                VER MAS</a>
+            </button>
         </div>
 
         <div class="carousel-item">
             <a target="_blank" href="https://www.behance.net/rocknrollacreative" class="div">
                 <img class="img-carou" src="imgs/behance005.jpg" alt="">
             </a>
-            <a class="behance-text" target="_blank" href="https://www.behance.net/rocknrollacreative">behance.net/rocknrollacreative</a>
+            <button class="conocenos">
+                <a target="_blank" href="https://www.behance.net/rocknrollacreative">
+                VER MAS</a>
+            </button>
         </div>
 
         <div class="carousel-item">
             <a target="_blank" href="https://www.behance.net/rocknrollacreative" class="div">
                 <img class="img-carou" src="imgs/behance006.jpg" alt="">
             </a>
-            <a class="behance-text" target="_blank" href="https://www.behance.net/rocknrollacreative">behance.net/rocknrollacreative</a>
+            <button class="conocenos">
+                <a target="_blank" href="https://www.behance.net/rocknrollacreative">
+                VER MAS</a>
+            </button>
         </div>
     
         <!--Controles NEXT y PREV-->
@@ -145,6 +164,7 @@
             <span class="sr-only">Next</span>
         </a>
         <!--Controles de indicadores-->
+        <!--
         <ol class="carousel-indicators">
             <li data-target="#carousel1" data-slide-to="0" class="active"></li>
             <li data-target="#carousel1" data-slide-to="1"></li>
@@ -153,7 +173,7 @@
             <li data-target="#carousel1" data-slide-to="4"></li>
             <li data-target="#carousel1" data-slide-to="5"></li>
         </ol>
-        
+        -->
     </div>
 
 </div>
@@ -161,7 +181,7 @@
 
 <!--INSTAGRAM FEED-->
 <div class="instaFeed-conteiner">
-    <div id="instafeed-container"></div>
+    <div id="instafeed-container" class="directIGfeed"></div>
 </div>
 
 <!--FOOTER-->
@@ -187,13 +207,7 @@
 <!---->
 
 <!-- Código de instalación Cliengo para emanunez26@gmail.com --> 
-<script type="text/javascript">
-    (function () {
-    var ldk = document.createElement('script'); ldk.type = 'text/javascript'; 
-    ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/60ad432b029bad002aa76783/60ad432d029bad002aa76786.js?platform=registration'; 
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); 
-    })();
-</script>
+<script type="text/javascript">(function(){var ldk=document.createElement('script'); ldk.type='text/javascript'; ldk.async=true; ldk.src='https://s.cliengo.com/weboptimizer/612536ba9c67c1002a54ddb8/612536bc9c67c1002a54ddbc.js?platform=view_installation_code_mail_webmaster'; var s=document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s);})();</script>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

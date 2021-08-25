@@ -21,9 +21,10 @@ html {
 }
 
 #logo-header {
-  width: 3.6em;
-  height: 2.3em;
-  padding-left: 0.5em;
+  width: 1.4em;
+  height: 1.2em;
+  margin-left: 0.5em;
+  margin-bottom: 0.2em;
 }
 
 #nav-menu {
@@ -106,9 +107,10 @@ html {
   padding-bottom: 0.7em;
 }
 
-#conocenos {
+.conocenos {
+  width: 10em;
   font-family: roboto CONDENSED 700;
-  font-size: 0.4em;
+  font-size: 0.5em;
   background-color: #f9e721;
   margin-top: 3em;
   padding: 0.5em;
@@ -165,6 +167,7 @@ span {
 .portfolio-title {
   position: absolute;
   top: 0;
+  margin-top: 0.1em;
   width: 100%;
   text-align: center;
   font-family: bebas NEUE;
@@ -208,9 +211,19 @@ span {
 
 /*-------------------------------IGFEED----------------------------------*/
 .instaFeed-conteiner {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
   margin-top: 1em;
   margin-bottom: 1em;
-  text-align: center;
+}
+
+.directIGfeed {
+  width: 70em;
+  height: 60em;
+  margin-left: 8em;
+  overflow-y: hidden;
 }
 
 a img {
