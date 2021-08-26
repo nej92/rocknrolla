@@ -21,12 +21,13 @@ html {
 }
 
 #logo-header {
-  width: 3.3em;
-  height: 2.5em;
-  padding-left: 0.5em;
+  width: 1em;
+  height: 0.8em;
+  margin-left: 0.5em;
 }
 
 #nav-menu {
+  display: flex;
   font-size: 1rem;
   padding-right: 1.2em;
 }
@@ -44,6 +45,29 @@ html {
   text-decoration: underline;
   color: #f9e721;
   transition: 0.7s;
+}
+
+.qhMenu {
+  display: none;
+}
+
+.queHacemos {
+  position: relative;
+}
+
+.queHacemos:hover .qhMenu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  color: #ffff;
+  background-color: #212121;
+  padding: 1em;
+}
+
+.queHacemos:hover .qhMenu a {
+  font-size: 0.9em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
 }
 
 /*--------MENU DESPLEGABLE MOBILE--------*/
@@ -210,8 +234,8 @@ span {
 }
 
 .redes-foot-imgs {
-  width: 0.8em;
-  height: 0.8em;
+  width: 0.6em;
+  height: 0.6em;
   margin-left: 0.3em;
   margin-right: 0.3em;
 }
@@ -221,18 +245,14 @@ span {
 }
 
 .footer-text-size {
-  font-size: 0.6em;
+  font-size: 0.4em;
   font-family: roboto CONDENSED;
-  font-weight: 400;
   color: #7a7a7a;
 }
 
 .city-foot {
   display: flex;
-  flex-direction: column;
-  align-items: center;
 }
-
 /*-------------------------------RESPONSIVE----------------------------------*/
 /*-------------------------------RESPONSIVE----------------------------------*/
 /*-------------------------------RESPONSIVE----------------------------------*/
@@ -248,7 +268,7 @@ span {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 840px) {
   .cont-title-dupla {
     font-size: 1.7rem;
     margin-top: 5.2em;

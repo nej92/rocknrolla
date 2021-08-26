@@ -21,13 +21,14 @@ html {
 }
 
 #logo-header {
-  width: 1.4em;
-  height: 1.2em;
+  width: 1em;
+  height: 0.8em;
   margin-left: 0.5em;
   margin-bottom: 0.2em;
 }
 
 #nav-menu {
+  display: flex;
   font-size: 1rem;
   padding-right: 1.2em;
 }
@@ -47,6 +48,28 @@ html {
   transition: 0.7s;
 }
 
+.qhMenu {
+  display: none;
+}
+
+.queHacemos {
+  position: relative;
+}
+
+.queHacemos:hover .qhMenu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  color: #ffff;
+  background-color: #212121;
+  padding: 1em;
+}
+
+.queHacemos:hover .qhMenu a {
+  font-size: 0.9em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
 /*--------MENU DESPLEGABLE MOBILE--------*/
 #nav-desp {
   display: none;
@@ -215,6 +238,7 @@ span {
   height: auto;
   display: flex;
   justify-content: center;
+
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -246,8 +270,8 @@ a img {
 }
 
 .redes-foot-imgs {
-  width: 0.8em;
-  height: 0.8em;
+  width: 0.6em;
+  height: 0.6em;
   margin-left: 0.3em;
   margin-right: 0.3em;
 }
@@ -257,15 +281,13 @@ a img {
 }
 
 .footer-text-size {
-  font-size: 0.6em;
+  font-size: 0.4em;
   font-family: roboto CONDENSED;
   color: #7a7a7a;
 }
 
 .city-foot {
   display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 /*-------------------------------RESPONSIVE----------------------------------*/
@@ -289,6 +311,17 @@ a img {
   /*-------------------------------FOOTER----------------------------------*/
   .footer {
     font-size: 1.5rem;
+  }
+
+  .directIGfeed {
+    width: 70em;
+    height: 30em;
+    margin-left: 8em;
+    overflow-y: hidden;
+  }
+  a img {
+    width: 10em;
+    height: 10em;
   }
 }
 
@@ -336,6 +369,8 @@ a img {
   #carousel1 {
     font-size: 1.5rem;
   }
+
+  /*-------------------------------IGFEED----------------------------------*/
 
   /*-------------------------------FOOTER----------------------------------*/
   .footer {
