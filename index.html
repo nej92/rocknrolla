@@ -17,14 +17,15 @@
 </head>
 <body>
 
+
 <!--HEADER-->
-    <div id="header">
+<div id="header">
 
         <a href="index.html"><img id="logo-header" src="imgs/logo-puño.png" 
         alt="logo-rocknrolla"></a>
 
+
         <nav id="nav-menu">
-            
                 <a class="menu-header" href="index.html">INICIO</a>
 
                 <a class="menu-header" target="_blank" href="https://www.behance.net/rocknrollacreative">PORTFOLIO</a>
@@ -47,19 +48,7 @@
                     </nav>
                 </div>
         </nav>
-        <!--MENU DESPLEGABLE MOBILE-->
-        
-            <nav id="nav-desp">
-            
-                <a class="menu-despl" href="index.html">INICIO</a>
 
-                <a class="menu-despl" target="_blank" href="https://www.behance.net/rocknrollacreative">PORTFOLIO</a>
-
-                <a class="menu-despl" href="quienes-somos.html">¿QUIÉNES SOMOS?</a>
-
-                <a class="menu-header" href="">¿QUE HACEMOS?</a>
-            
-            </nav>
 
         <!---->
 
@@ -67,14 +56,28 @@
         <div id="cont-btn-hambur">
             <input id="hambur-check" type="checkbox">
             <label for="hambur-check">
-                <img id="menu-mobile" src="imgs/hambur.png" alt="img-menu-hambur">
-                <img id="cross-mobile" src="imgs/cross.png" alt="img-cross-hambur">
+                <img id="menu-mobile" onclick="showMenu()"
+                 src="imgs/hambur.png" alt="img-menu-hambur">
+                <img id="cross-mobile" onclick="hideMenu()"
+                src="imgs/cross.png" alt="img-cross-hambur">
             </label>
-            
         </div>
-        <!---->
+        
+</div>
+    
+<!--MENU DESPLEGABLE MOBILE-->
+<nav id="nav-desp">
+        
+    <a class="menu-despl" href="index.html">INICIO</a>
 
-    </div>
+    <a class="menu-despl" target="_blank" href="https://www.behance.net/rocknrollacreative">PORTFOLIO</a>
+
+    <a class="menu-despl" href="quienes-somos.html">¿QUIÉNES SOMOS?</a>
+    
+    <a class="menu-despl" id="wwd" href="" onclick="whatWeDo()">¿QUE HACEMOS?</a>
+
+</nav>
+<!---->
 <!---->
 
 <!--SECTION 1-->
@@ -115,19 +118,13 @@
             <a target="_blank" href="https://www.behance.net/rocknrollacreative" class="div">
                 <img class="img-carou" src="imgs/behance001.jpg" alt="" >
             </a>
-            <button class="conocenos">
-                <a target="_blank" href="https://www.behance.net/rocknrollacreative">
-                VER MAS</a>
-            </button>
+                <a target="_blank" href="https://www.behance.net/rocknrollacreative"><button class="conocenos">VER MAS</button></a>
         </div>
 
         <div class="carousel-item">
             <a target="_blank" href="https://www.behance.net/rocknrollacreative" class="div">
                 <img class="img-carou" src="imgs/behance002.jpg" alt="" >
-                <button class="conocenos">
-                <a target="_blank" href="https://www.behance.net/rocknrollacreative">
-                VER MAS</a>
-            </button>
+                <a target="_blank" href="https://www.behance.net/rocknrollacreative"><button class="conocenos">VER MAS</button></a>
             </a>
         </div>
 
@@ -135,40 +132,28 @@
             <a target="_blank" href="https://www.behance.net/rocknrollacreative" class="div">
                 <img class="img-carou" src="imgs/behance003.jpg" alt="">
             </a>
-            <button class="conocenos">
-                <a target="_blank" href="https://www.behance.net/rocknrollacreative">
-                VER MAS</a>
-            </button>
+            <a target="_blank" href="https://www.behance.net/rocknrollacreative"><button class="conocenos">VER MAS</button></a>
         </div>
 
         <div class="carousel-item">
             <a target="_blank" href="https://www.behance.net/rocknrollacreative" class="div">
                 <img class="img-carou" src="imgs/behance02.jpg" alt="">
             </a>
-            <button class="conocenos">
-                <a target="_blank" href="https://www.behance.net/rocknrollacreative">
-                VER MAS</a>
-            </button>
+            <a target="_blank" href="https://www.behance.net/rocknrollacreative"><button class="conocenos">VER MAS</button></a>
         </div>
 
         <div class="carousel-item">
             <a target="_blank" href="https://www.behance.net/rocknrollacreative" class="div">
                 <img class="img-carou" src="imgs/behance005.jpg" alt="">
             </a>
-            <button class="conocenos">
-                <a target="_blank" href="https://www.behance.net/rocknrollacreative">
-                VER MAS</a>
-            </button>
+            <a target="_blank" href="https://www.behance.net/rocknrollacreative"><button class="conocenos">VER MAS</button></a>
         </div>
 
         <div class="carousel-item">
             <a target="_blank" href="https://www.behance.net/rocknrollacreative" class="div">
                 <img class="img-carou" src="imgs/behance006.jpg" alt="">
             </a>
-            <button class="conocenos">
-                <a target="_blank" href="https://www.behance.net/rocknrollacreative">
-                VER MAS</a>
-            </button>
+            <a target="_blank" href="https://www.behance.net/rocknrollacreative"><button class="conocenos">VER MAS</button></a>
         </div>
     
         <!--Controles NEXT y PREV-->
@@ -229,5 +214,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
 <script src="js/instaFeed.js"></script>
+<script src="js/hamburButtons.js"></script>
 </body>
 </html>

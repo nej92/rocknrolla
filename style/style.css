@@ -6,7 +6,9 @@
 html {
   font-family: roboto CONDENSED;
 }
+
 /*-------------------------------HEADER----------------------------------*/
+
 #header {
   position: fixed;
   top: 0;
@@ -17,7 +19,7 @@ html {
   justify-content: space-between;
   align-items: center;
   background-color: #212121;
-  z-index: 100;
+  z-index: 1000;
 }
 
 #logo-header {
@@ -70,15 +72,11 @@ html {
   padding-top: 0.3em;
   padding-bottom: 0.3em;
 }
-/*--------MENU DESPLEGABLE MOBILE--------*/
-#nav-desp {
-  display: none;
-  visibility: hidden;
-}
 
-/*--------BTN HAMBUR--------*/
+/*--------------------------------BTN HAMBUR--------------------------------*/
 #cont-btn-hambur {
   display: none;
+  font-size: 3.5rem;
 }
 
 #hambur-check {
@@ -92,6 +90,16 @@ html {
 #cross-mobile {
   visibility: hidden;
 }
+/*--------MENU DESPLEGABLE MOBILE--------*/
+#nav-desp {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  font-size: 3em;
+  visibility: hidden;
+  z-index: 999;
+}
+
 /*-------------------------------SECTION 1----------------------------------*/
 #conteiner-sec1 {
   display: flex;
@@ -330,13 +338,11 @@ a img {
   #cont-btn-hambur {
     display: block;
   }
-
   #menu-mobile {
     visibility: visible;
     width: 1em;
     margin-right: 0.7em;
   }
-
   #cross-mobile {
     display: none;
     visibility: hidden;
@@ -344,20 +350,36 @@ a img {
     height: 0.9em;
     margin-right: 0.7em;
   }
-
   #hambur-check:checked ~ * #menu-mobile {
     display: none;
     visibility: hidden;
   }
-
   #hambur-check:checked ~ * #cross-mobile {
     display: block;
     visibility: visible;
   }
-
+  #hambur-check:checked ~ * #nav-desp {
+    display: block;
+    visibility: visible;
+  }
   #nav-menu {
     font-size: 0.6rem;
     visibility: hidden;
+  }
+  #nav-desp {
+    display: flex;
+    bottom: 0;
+    padding-top: 1.5em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #212121;
+  }
+  .menu-despl {
+    font-family: bebas NEUE;
+    font-size: 0.7em;
+    color: #ffff;
+    text-decoration: none;
   }
 
   /*-------------------------------SECTION 2----------------------------------*/
@@ -398,6 +420,8 @@ a img {
     visibility: visible;
     width: 1em;
     margin-right: 0.7em;
+    width: 0.5em;
+    height: 0.5em;
   }
 
   #cross-mobile {
@@ -406,6 +430,8 @@ a img {
     width: 0.9em;
     height: 0.9em;
     margin-right: 0.7em;
+    width: 0.5em;
+    height: 0.5em;
   }
 
   #hambur-check:checked ~ * #menu-mobile {
@@ -417,15 +443,9 @@ a img {
     display: block;
     visibility: visible;
   }
-
-  /*--------MENU DESPLEGABLE MOBILE--------*/
-  /*#cont-menudespl-mobile{
-        display: block;
-        position: absolute;
-        background-color: #212121;
-        margin-top: 7.3em;
-        width: 100%;
-        border-top: double 5px #ffff; */
+  #nav-desp {
+    font-size: 2em;
+  }
 
   /*-------------------------------SECTION 1----------------------------------*/
   #conteiner-sec1 {
@@ -441,32 +461,6 @@ a img {
   #conteiner-sec2 {
     font-size: 0.6em;
   }
-
-  /*-----------------------------------------------------------------*/
-  #nav-desp {
-    display: flex;
-    position: absolute;
-    background-color: #212121;
-    margin-top: 7.3em;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 5em;
-  }
-
-  .menu-despl {
-    font-family: bebas NEUE;
-    font-size: 0.7em;
-    color: #ffff;
-    text-decoration: none;
-  }
-
-  #hambur-check:checked ~ * #nav-desp {
-    /* NO ANDA: buscar solucion*/
-    visibility: visible;
-  }
-
   /*--------------------------------CAROUSEL---------------------------------*/
   #carousel1 {
     font-size: 1rem;
@@ -491,16 +485,3 @@ a img {
     margin-bottom: 0.5em;
   }
 }
-
-/*
-DATOS:
-------------------
-negro
-#212121
-amarillo
-#F9E721
-
-TITULOS. BEBAS NEUE
-TEXTOS: ROBOTO CONDENSED
-NOTAS COMENTARIOS: OLD STANDARD
-*/

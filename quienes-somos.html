@@ -42,32 +42,36 @@
                 </nav>
             </div>
     </nav>
-        <!--MENU DESPLEGABLE MOBILE-->
         
-            <nav id="nav-desp">
-            
-                <a class="menu-despl" href="">INICIO</a>
-
-                <a class="menu-despl" target="_blank" href="https://www.behance.net/rocknrollacreative">PORTFOLIO</a>
-
-                <a class="menu-despl" href="">¿QUIÉNES SOMOS?</a>
-            
-            </nav>
-
-        <!---->
 
         <!--BTN HAMBUR-->
         <div id="cont-btn-hambur">
             <input id="hambur-check" type="checkbox">
             <label for="hambur-check">
-                <img id="menu-mobile" src="imgs/hambur.png" alt="img-menu-hambur">
-                <img id="cross-mobile" src="imgs/cross.png" alt="img-cross-hambur">
+                <img id="menu-mobile" onclick="showMenu()"
+                 src="imgs/hambur.png" alt="img-menu-hambur">
+                <img id="cross-mobile" onclick="hideMenu()"
+                src="imgs/cross.png" alt="img-cross-hambur">
             </label>
-            
         </div>
         <!---->
 
-    </div>
+</div>
+<!--MENU DESPLEGABLE MOBILE-->
+    
+<nav id="nav-desp">
+    
+    <a class="menu-despl" href="index.html">INICIO</a>
+
+    <a class="menu-despl" target="_blank" href="https://www.behance.net/rocknrollacreative">PORTFOLIO</a>
+
+    <a class="menu-despl" href="quienes-somos.html">¿QUIÉNES SOMOS?</a>
+    
+    <a class="menu-despl" id="wwd" href="" onclick="whatWeDo()">¿QUE HACEMOS?</a>
+
+</nav>
+
+<!---->
 <!---->
 
 <!--LA DUPLA CREATIVA-->
@@ -175,13 +179,7 @@
 <!---->
 
 <!-- Código de instalación Cliengo para emanunez26@gmail.com --> 
-<script type="text/javascript">
-    (function () {
-    var ldk = document.createElement('script'); ldk.type = 'text/javascript'; 
-    ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/60ad432b029bad002aa76783/60ad432d029bad002aa76786.js?platform=registration'; 
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); 
-    })();
-</script>
-
+<script type="text/javascript">(function(){var ldk=document.createElement('script'); ldk.type='text/javascript'; ldk.async=true; ldk.src='https://s.cliengo.com/weboptimizer/612536ba9c67c1002a54ddb8/612536bc9c67c1002a54ddbc.js?platform=view_installation_code_mail_webmaster'; var s=document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s);})();</script>
+<script src="js/hamburButtons.js"></script>
 </body>
 </html>
