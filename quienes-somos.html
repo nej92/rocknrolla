@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROCKNROLLA</title>
 
+    <link rel="icon" href="./imgs/icono-pestañaNEGRO.png">
     <link rel="stylesheet" href="style/styleqs.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
@@ -18,8 +19,8 @@
     <a href="index.html"><img id="logo-header" src="imgs/logo-puño.png" 
     alt="logo-rocknrolla"></a>
 
+
     <nav id="nav-menu">
-        
             <a class="menu-header" href="index.html">INICIO</a>
 
             <a class="menu-header" target="_blank" href="https://www.behance.net/rocknrollacreative">PORTFOLIO</a>
@@ -27,7 +28,7 @@
             <a class="menu-header" href="quienes-somos.html">¿QUIÉNES SOMOS?</a>
 
             <div class="queHacemos">
-                <a class="menu-header" href="">¿QUE HACEMOS?</a>
+                <p class="menu-header" href="">¿QUE HACEMOS?</p>
                 <nav class="qhMenu">
                     <a>PROYECTOS INTEGRALES</a>
                     <a>DISEÑO IDENTIDAD & BRANDING</a>
@@ -42,35 +43,33 @@
                 </nav>
             </div>
     </nav>
-        
 
-        <!--BTN HAMBUR-->
-        <div id="cont-btn-hambur">
-            <input id="hambur-check" type="checkbox">
-            <label for="hambur-check">
-                <img id="menu-mobile" onclick="showMenu()"
-                 src="imgs/hambur.png" alt="img-menu-hambur">
-                <img id="cross-mobile" onclick="hideMenu()"
-                src="imgs/cross.png" alt="img-cross-hambur">
-            </label>
-        </div>
-        <!---->
 
+    <!--BTN HAMBUR-->
+    <div id="cont-btn-hambur">
+        <input id="hambur-check" type="checkbox">
+        <label for="hambur-check">
+            <img id="menu-mobile" onclick="showMenu()"
+             src="imgs/hambur.png" alt="img-menu-hambur">
+            <img id="cross-mobile" onclick="hideMenu()"
+            src="imgs/cross.png" alt="img-cross-hambur">
+        </label>
+    </div>
+    <!---->
 </div>
+
 <!--MENU DESPLEGABLE MOBILE-->
-    
 <nav id="nav-desp">
-    
+        
     <a class="menu-despl" href="index.html">INICIO</a>
 
     <a class="menu-despl" target="_blank" href="https://www.behance.net/rocknrollacreative">PORTFOLIO</a>
 
     <a class="menu-despl" href="quienes-somos.html">¿QUIÉNES SOMOS?</a>
     
-    <a class="menu-despl" id="wwd" href="" onclick="whatWeDo()">¿QUE HACEMOS?</a>
+    <a class="menu-despl" href="wwd.html" id="wwd">¿QUE HACEMOS?</a>
 
 </nav>
-
 <!---->
 <!---->
 
@@ -136,27 +135,6 @@
     
 </div>
 <!---->
-
-<!--FORMULARIO DE CONTACTO
-<div class="cont-formulario">
-
-    <div>
-        <form action="" method="">
-            <label for="">Nombre</label>
-            <input type="text" required>
-            
-            <label for="">Email</label>
-            <input type="mail" required>
-
-            <label for="">Teléfono</label>
-            <input type="number">
-
-            <label for="">Mensaje...</label>
-            <input type="text" required>
-        </form>
-    </div>
-</div>
--->
 
 <!--FOOTER-->
 <div class="footer">

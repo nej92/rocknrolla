@@ -6,6 +6,7 @@
 html {
   font-family: roboto CONDENSED;
 }
+
 /*-------------------------------HEADER----------------------------------*/
 #header {
   position: fixed;
@@ -346,7 +347,22 @@ span {
     color: #ffff;
     text-decoration: none;
   }
-
+  /*-------------------------------WWD----------------------------------*/
+  .wwpList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding-top: 5em;
+  }
+  .wwpList ul p {
+    font-size: 2em;
+    font-family: bebas NEUE;
+    color: #212121;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
   /*-------------------------------LA HISTORIA----------------------------------*/
   .cont-elements-histo {
     width: 25em;
@@ -358,7 +374,7 @@ span {
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 480px) {
   /*----------------HAMBUR----------------*/
   #header {
     font-size: 2.5rem;
@@ -401,9 +417,19 @@ span {
     display: block;
     visibility: visible;
   }
+
   #nav-desp {
     font-size: 2em;
   }
+  /*-------------------------------WWD----------------------------------*/
+  .wwpList {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  .wwpList ul p {
+    font-size: 1.7em;
+  }
+
   /*-------------------------------LA DUPLA CREATIVA----------------------------------*/
 
   .cont-title-dupla {

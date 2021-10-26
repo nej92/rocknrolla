@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>ROCKNROLLA</title>
+
+    <link rel="stylesheet" href="style/styleqs.css" />
+    <link rel="icon" href="./imgs/icono-pestañaNEGRO.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--HEADER-->
+    <div id="header">
+      <a href="index.html"
+        ><img id="logo-header" src="imgs/logo-puño.png" alt="logo-rocknrolla"
+      /></a>
+
+      <!--BTN HAMBUR-->
+      <div id="cont-btn-hambur">
+        <input id="hambur-check" type="checkbox" />
+        <label for="hambur-check">
+          <img
+            id="menu-mobile"
+            onclick="showMenu()"
+            src="imgs/hambur.png"
+            alt="img-menu-hambur"
+          />
+          <img
+            id="cross-mobile"
+            onclick="hideMenu()"
+            src="imgs/cross.png"
+            alt="img-cross-hambur"
+          />
+        </label>
+      </div>
+      <!---->
+    </div>
+
+    <!--MENU DESPLEGABLE MOBILE-->
+    <nav id="nav-desp">
+      <a class="menu-despl" href="index.html">INICIO</a>
+
+      <a
+        class="menu-despl"
+        target="_blank"
+        href="https://www.behance.net/rocknrollacreative"
+        >PORTFOLIO</a
+      >
+
+      <a class="menu-despl" href="quienes-somos.html">¿QUIÉNES SOMOS?</a>
+
+      <a class="menu-despl" href="wwd.html" id="wwd">¿QUE HACEMOS?</a>
+    </nav>
+    <!---->
+    <!---->
+    <section class="wwpList">
+      <ul>
+        <p>PROYECTOS INTEGRALES</p>
+        <p>DISEÑO IDENTIDAD & BRANDING</p>
+        <p>DISEÑO AUDIOVISUAL</p>
+        <p>DISEÑO PUBLICITARIO</p>
+        <p>DISEÑO DE REDES</p>
+        <p>DISEÑO EDITORIAL</p>
+        <p>DISEÑO PROMOCIONAL</p>
+        <p>PRODUCCIÓN FOTOGRÁFICA</p>
+        <p>FOTOGRAFÍA DE PRODUCTO</p>
+        <p>FOTOGRAFÍA DE EVENTOS</p>
+      </ul>
+    </section>
+
+    <script src="js/hamburButtons.js"></script>
+  </body>
+</html>

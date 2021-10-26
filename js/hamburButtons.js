@@ -1,7 +1,7 @@
 navDespHamburImg = document.getElementById('nav-desp');
 navDespCrossImg = document.getElementById('nav-desp');
 wwd = document.getElementById('wwd');
-wwd.addEventListener('click', whatWeDo)
+
 navDespHamburImg.addEventListener('click', showMenu);
 navDespCrossImg.addEventListener('click', hideMenu);
 function showMenu() {
@@ -10,6 +10,10 @@ function showMenu() {
 function hideMenu(){
     navDespCrossImg.style =  `visibility: hidden;`
 }
-function whatWeDo(){
-    wwd.style=``
+wwd.onmousedown = function () {
+    console.log('tocado');
+}
+
+wwd.onmouseup = function () {
+    console.log('soltado');
 }
