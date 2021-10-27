@@ -386,9 +386,6 @@ span {
   }
 
   /*--------BTN HAMBUR--------*/
-  #cont-btn-hambur {
-    display: block;
-  }
 
   #menu-mobile {
     visibility: visible;
