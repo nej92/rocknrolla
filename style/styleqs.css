@@ -253,6 +253,7 @@ span {
   font-size: 0.4em;
   font-family: roboto CONDENSED;
   color: #7a7a7a;
+  font-weight: 400;
 }
 
 .city-foot {
@@ -386,9 +387,6 @@ span {
   }
 
   /*--------BTN HAMBUR--------*/
-  #cont-btn-hambur {
-    display: block;
-  }
 
   #menu-mobile {
     visibility: visible;

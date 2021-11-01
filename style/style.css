@@ -303,9 +303,6 @@ a img {
 /*-------------------------------RESPONSIVE----------------------------------*/
 /*-------------------------------RESPONSIVE----------------------------------*/
 
-@media (max-width: 1280px) {
-}
-
 @media (max-width: 768px) {
   /*-------------------------------SECTION 1----------------------------------*/
   #video-explo {
@@ -400,7 +397,7 @@ a img {
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 480px) {
   /*----------------HAMBUR----------------*/
   #header {
     font-size: 2.5rem;
@@ -412,10 +409,6 @@ a img {
   }
 
   /*--------BTN HAMBUR--------*/
-  #cont-btn-hambur {
-    display: block;
-  }
-
   #menu-mobile {
     visibility: visible;
     width: 1em;
@@ -469,19 +462,6 @@ a img {
   /*-------------------------------FOOTER----------------------------------*/
 
   .footer {
-    font-size: 0.5rem;
-    padding-top: 5em;
-    padding-bottom: 5em;
-  }
-
-  .footer-text-size {
-    font-size: 1.3em;
-  }
-
-  .redes-foot-imgs {
-    width: 1.5em;
-    height: 1.5em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    font-size: 0.8rem;
   }
 }
