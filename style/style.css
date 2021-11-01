@@ -1,6 +1,7 @@
 * {
   padding: 0px;
   margin: 0px;
+  box-sizing: border-box;
 }
 
 html {
@@ -463,5 +464,15 @@ a img {
 
   .footer {
     font-size: 0.8rem;
+  }
+
+  @media (max-width: 350px) {
+    #header {
+      justify-content: center;
+    }
+
+    #logo-header {
+      margin-left: 1em;
+    }
   }
 }
