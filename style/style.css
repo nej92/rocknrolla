@@ -443,7 +443,7 @@ a img {
 
   /*-------------------------------SECTION 1----------------------------------*/
   #conteiner-sec1 {
-    height: 600px;
+    height: 500px;
     margin-top: 90px;
   }
 
@@ -473,6 +473,10 @@ a img {
 
     #logo-header {
       margin-left: 1em;
+    }
+
+    #conteiner-sec1 {
+      height: 400px;
     }
   }
 }
