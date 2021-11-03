@@ -2,6 +2,6 @@ let userFeed = new Instafeed({
     get: 'user',
     target: "instafeed-container",
     resolution: 'low_resolution',
-    accessToken: 'IGQVJYQnVfUnhaTURyNGZAHVENDaU1iX1ctelZArMkJzVjd5X3lydUF1YzFDSVl3MWdiUHc2aUYwbVRldkxXLUdPSXZAzME9rWk5qckNsWENyclBna3NVRWZA1MlRhMWRMazd5ZA0dBWjFzUGNPUTVma3MyQgZDZD'
+    accessToken: 'IGQVJVeUJ0cXZAXTWV5TEZA0VGEyRzF5R1g1RU5kX1MwV1haanBMMHlWYVhDWnhmeU5aLTJPMl9rd1lXZAlhqUkN2ZATlyTVdQWnUtVWJnRm53T1RhZAVZAaR0hRTVNmODhabUF0djJBZA1hrRDFJdEFQVkZAUMAZDZD'
 });
 userFeed.run();

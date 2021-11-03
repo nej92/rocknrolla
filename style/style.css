@@ -146,9 +146,9 @@ html {
   background-color: #f9e721;
   margin-top: 3em;
   padding: 0.5em;
-  border-radius: 8%;
+  border: 0px solid #f9e721;
+  color: #212121;
 }
-
 span {
   text-decoration: underline;
 }
