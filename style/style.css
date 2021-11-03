@@ -243,19 +243,28 @@ span {
 
 /*-------------------------------IGFEED----------------------------------*/
 .instaFeed-conteiner {
+  position: relative;
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
-
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
+.instaFeed-conteiner h1 {
+  position: absolute;
+  font-family: bebas NEUE;
+  font-size: 4em;
+  color: #212121;
+  top: 0;
+  margin-top: 1em;
+}
+
 .directIGfeed {
-  width: 70em;
+  margin-top: 10em;
+  width: 60em;
   height: 60em;
-  margin-left: 8em;
   overflow-y: hidden;
 }
 
@@ -303,6 +312,19 @@ a img {
 /*-------------------------------RESPONSIVE----------------------------------*/
 /*-------------------------------RESPONSIVE----------------------------------*/
 /*-------------------------------RESPONSIVE----------------------------------*/
+@media (max-width: 960px) {
+  /*-------------------------------IGFEED----------------------------------*/
+  .directIGfeed {
+    width: 45em;
+    height: 45em;
+    overflow-y: hidden;
+  }
+
+  a img {
+    width: 15em;
+    height: 15em;
+  }
+}
 
 @media (max-width: 768px) {
   /*-------------------------------SECTION 1----------------------------------*/
@@ -314,20 +336,21 @@ a img {
     font-size: 0.5em;
   }
 
-  /*-------------------------------FOOTER----------------------------------*/
-  .footer {
-    font-size: 1.5rem;
-  }
-
+  /*-------------------------------IGFEED----------------------------------*/
   .directIGfeed {
-    width: 70em;
+    width: 30em;
     height: 30em;
-    margin-left: 8em;
+
     overflow-y: hidden;
   }
   a img {
     width: 10em;
     height: 10em;
+  }
+
+  /*-------------------------------FOOTER----------------------------------*/
+  .footer {
+    font-size: 1.5rem;
   }
 }
 
@@ -397,8 +420,15 @@ a img {
   #carousel1 {
     font-size: 1.5rem;
   }
-
   /*-------------------------------IGFEED----------------------------------*/
+  .instaFeed-conteiner h1 {
+    font-size: 3em;
+    margin-top: 0.5em;
+  }
+
+  .directIGfeed {
+    margin-top: 5em;
+  }
 
   /*-------------------------------FOOTER----------------------------------*/
   .footer {
@@ -467,7 +497,26 @@ a img {
   #carousel1 {
     font-size: 1rem;
   }
+  /*-------------------------------IGFEED----------------------------------*/
+  .directIGfeed {
+    width: 15em;
+    height: 15em;
 
+    overflow-y: hidden;
+  }
+  a img {
+    width: 5em;
+    height: 5em;
+  }
+
+  .instaFeed-conteiner h1 {
+    font-size: 1.8em;
+    margin-top: 0.3em;
+  }
+
+  .directIGfeed {
+    margin-top: 3em;
+  }
   /*-------------------------------FOOTER----------------------------------*/
 
   .footer {
